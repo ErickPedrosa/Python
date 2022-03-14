@@ -12,3 +12,4 @@ if(l1 + l2 > l3):
         print("É impossível formar um triângulo."); 
 else:
     print("É impossível formar um triângulo."); 
+
