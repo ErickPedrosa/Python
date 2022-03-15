@@ -4,7 +4,7 @@ p = float(input("Digite o seu peso: "));
 
 imc = p / (h ** 2); 
 
-print("\nO seu IMC é {}".format(imc)); 
+print("\nO seu IMC é {:.2f}".format(imc)); 
 
 if(imc < 18.5):
     print("Você está abaixo do peso."); 
