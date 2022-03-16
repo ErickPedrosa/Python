@@ -1,7 +1,7 @@
 sexo = ''
 
 while (sexo != 'M' and sexo != 'F'):
-    sexo = input("Digite o seu sexo:\n[ M ] - Para maculino\n[ F ] - Para feminino\n ").upper()
+    sexo = input("Digite o seu sexo:\n[ M ] - Para maculino\n[ F ] - Para feminino\n ").strip().upper()[0]
     if(sexo != 'M' and sexo != 'F'):
         print("ERRO: Entrada inválida, digite uma opção válida")
 
