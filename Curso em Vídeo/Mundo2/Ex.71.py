@@ -1,16 +1,26 @@
-from itertools import count
+print('-' * 40)
+s = "BANCO CEV "
+print(f"{s:^40}")
+print('-' * 40)
 
+valor = int(input("Qual valor você deseja sacar: R$"))
 
-resp = 'N'
-counter = 0
-media = 0
+n_50 = (valor // 50)
+r = (valor % 50)
 
-while(resp != 'S'):
-    counter += 1
-    n = int(input("Digite um número inteiro: "))
-    media += n
-    resp = input("Você deseja parar de digitar [S/N]: ".upper())
+n_20 = (r // 20)
+r = (valor % 20)
 
-media /= counter
+n_10 = (r // 10)
+r = (valor % 10)
 
-print("Foram digitados {} números e a média deles é {:.2f}".format(counter, media))
+n_1 = (r // 1)
+r = (valor % 1)
+
+print(f"""Total de {n_50} cédulas de R$50,00 
+Total de {n_20} cédulas de R$20,00
+Total de {n_10} cédulas de R$10,00
+Total de {n_1} cédulas de R$1,00""")
+
+s = "FIM DO PROGRAMA"
+print(f"{s:=^40}")

@@ -1,16 +1,18 @@
-from itertools import count
 
+while True:
+    print('-' * 40)
+    num = int(input('Quer ver a tabuada de qual valor: '))
+    print('-' * 40)
 
-resp = 'N'
-counter = 0
-media = 0
+    if(num < 0):
+        break; 
 
-while(resp != 'S'):
-    counter += 1
-    n = int(input("Digite um número inteiro: "))
-    media += n
-    resp = input("Você deseja parar de digitar [S/N]: ".upper())
+    print('-' * 40)
+    print('\nA tabuada do número digitado é: ')
+    print('-' * 40)
 
-media /= counter
-
-print("Foram digitados {} números e a média deles é {:.2f}".format(counter, media))
+    for c in range(1, 11):
+        res = num * c
+        print(f'{num} x {c}  = {res}')
+    print('-' * 40)
+    
