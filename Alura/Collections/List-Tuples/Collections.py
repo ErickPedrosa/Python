@@ -1,4 +1,3 @@
-
 from Introducao import ContaCorrente, Introducao;
 
 print();
@@ -17,7 +16,6 @@ print(c2);
 
 contas = (c, c2);
 print(contas);
-
 
 
 

@@ -1,5 +1,4 @@
 
-
 def Introducao():
     idade1 = 39;
     idade2 = 30;
@@ -39,7 +38,7 @@ class ContaCorrente:
         self.saldo += valor;
 
     def __str__(self) -> str:
-        return "[>>Código: {}; Saldo: {}<<]".format(self.codigo, self.saldo)
+        return " [ >>Código: {}; Saldo: {}<< ] ".format(self.codigo, self.saldo)
 
     def __repr__(self) -> str:
         return " ( >>Código: {}; Saldo: {}<< ) ".format(self.codigo, self.saldo)
